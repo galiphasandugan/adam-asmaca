@@ -11,7 +11,7 @@ const wrongLetters = [];
 let selectedWord = getRandomWord();
 
 function getRandomWord() {
-    const words = ["javascript","java","python","css","html"];
+    const words = ["javascrıpt","java","python","css","html"];
     return words[Math.floor(Math.random() * words.length)];
 }
 
@@ -73,7 +73,7 @@ PlayAgainBtn.addEventListener('click', function() {
 });
 
 window.addEventListener('keydown', function(e) {
-    if (e.keyCode >= 65 && e.keyCode <= 90 && e.keyCode == 222 )    {        
+    if (e.keyCode >= 65 && e.keyCode <= 90 )    {        
         const letter = e.key;
 
         if (selectedWord.includes(letter)) {
