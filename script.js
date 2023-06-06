@@ -73,7 +73,7 @@ PlayAgainBtn.addEventListener('click', function() {
 });
 
 window.addEventListener('keydown', function(e) {
-    if (e.keyCode >= 65 && e.keyCode <= 90) {        
+    if (e.keyCode >= 65 && e.keyCode <= 90 && e.keyCode == 222 )    {        
         const letter = e.key;
 
         if (selectedWord.includes(letter)) {
